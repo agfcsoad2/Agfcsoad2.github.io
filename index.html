@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Marca · Accesorios de Boda</title>
+  <meta name="description" content="Accesorios y papelería de boda personalizados: invitaciones, carteles, tazas, camisetas, seating plan y más.">
+  <meta property="og:title" content="Accesorios de Boda Personalizados">
+  <meta property="og:description" content="Diseño y producción de detalles para bodas: invitaciones, señalética, tazas, camisetas y packs completos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/preview.jpg">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+  <style>
+    :root { --brand: #8a2be2; }
+    header.hero { padding: 6rem 0 3rem; background: linear-gradient(180deg,#fff, #faf7ff); }
+    header .tag { background: #efe7ff; color: #4b2bb2; padding: .25rem .6rem; border-radius: .5rem; font-size: .9rem; }
+    .grid.gallery { grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap: .75rem; }
+    .gallery a { display:block; border-radius: .5rem; overflow:hidden; border: 1px solid #eee; }
+    .gallery img, .gallery object { width:100%; height:160px; object-fit:cover; display:block; }
+    .testi { display:grid; gap:1rem; }
+    .testi blockquote { margin:0; border-left: 4px solid var(--brand); background:#f8f6ff; }
+    footer { border-top: 1px solid #eee; padding-top: 2rem; }
+    .whatsapp-btn { background:#25D366; border:none; }
+    .floating-wa { position: fixed; right: 1rem; bottom: 1rem; z-index: 9999; }
+    .floating-wa a { display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1rem; border-radius: 999px; background:#25D366; color:#fff; text-decoration:none; box-shadow: 0 6px 20px rgba(37,211,102,.3); }
+    .floating-wa svg { width:18px; height:18px; }
+    details { border:1px solid #eee; border-radius:.6rem; padding:.75rem 1rem; background:#fff; }
+    details + details { margin-top:.75rem; }
+  </style>
+</head>
+<body>
+  <header class="hero container">
+    <span class="tag">Bodas · Hecho a medida</span>
+    <h1 style="margin-top:.5rem">Accesorios y Papelería de Boda</h1>
+    <p>Invitaciones, carteles de bienvenida, seating plan, tazas, camisetas y packs coordinados. Todo diseñado para vuestro gran día.</p>
+    <div>
+      <a href="#contacto" role="button">Pedir presupuesto</a>
+      <a href="#resultados" class="secondary">Ver resultados</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <article>
+          <h3>Papelería</h3>
+          <p>Invitaciones, save the date, menús, minutas, tarjetas y agradecimientos en varios acabados.</p>
+        </article>
+        <article>
+          <h3>Señalética</h3>
+          <p>Carteles de bienvenida y seating plan en cartón pluma o metacrilato. Montaje el día del evento (opcional).</p>
+        </article>
+        <article>
+          <h3>Accesorios</h3>
+          <p>Tazas sublimadas, camisetas y tote bags con DTF, pegatinas UV-DTF para copas y regalos.</p>
+        </article>
+        <article>
+          <h3>Packs</h3>
+          <p>Todo coordinado por estilo y colores. Pack demo + moodboard incluido.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <h2>Resultados</h2>
+      <div class="grid gallery">
+        <a href="images/galeria-1.svg"><object type="image/svg+xml" data="images/galeria-1.svg" aria-label="Seating plan con estilo minimalista"></object></a>
+        <a href="images/galeria-2.svg"><object type="image/svg+xml" data="images/galeria-2.svg" aria-label="Cartel de bienvenida sobre caballete"></object></a>
+        <a href="images/galeria-3.svg"><object type="image/svg+xml" data="images/galeria-3.svg" aria-label="Tazas personalizadas para novios y padres"></object></a>
+        <a href="images/galeria-4.svg"><object type="image/svg+xml" data="images/galeria-4.svg" aria-label="Camisetas despedida de soltera"></object></a>
+      </div>
+      <small>Consejo: sustituye estas imágenes por tus trabajos reales (JPG 1200×800 aprox.).</small>
+    </section>
+
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testi">
+        <blockquote>
+          <p>“Nos salvaron el seating a última hora. El montaje quedó precioso.”</p>
+          <footer>— Laura & Diego · Junio 2025</footer>
+        </blockquote>
+        <blockquote>
+          <p>“Las tazas de agradecimiento fueron un exitazo. Repetiríamos sin duda.”</p>
+          <footer>— Noa & Marc · Abril 2025</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Con cuánta antelación debo reservar?</summary>
+        <p>Lo ideal son 4–8 semanas. Si tienes prisa, consúltanos disponibilidad express.</p>
+      </details>
+      <details>
+        <summary>¿Hacéis envíos?</summary>
+        <p>Sí, a toda España con embalaje protector. También entrega en mano en zona local.</p>
+      </details>
+      <details>
+        <summary>¿Podéis usar nuestro monograma?</summary>
+        <p>Claro. Trabajamos sobre tu identidad o la diseñamos desde cero.</p>
+      </details>
+    </section>
+
+    <section id="contacto">
+      <h2>Contactar</h2>
+      <p>Rellena el formulario y te respondemos en 24–48 h. También puedes escribir por WhatsApp.</p>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:.6rem;border:1px solid #eee;">
+        <iframe data-tally-src="https://tally.so/embed/YOUR-TALLY-ID?hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="Contacto" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+      </div>
+      <script>
+        var d=document,w="https://tally.so/widgets/embed.js",v=function(){if("Tally"in window){Tally.loadEmbeds()}else{d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})}};
+        if(!("Tally"in window))d.querySelectorAll("script[src='"+w+"']").length||((s=d.createElement("script")).src=w,s.onload=v,d.body.appendChild(s)); else v();
+      </script>
+      <p><a class="whatsapp-btn" href="https://wa.me/34600000000" role="button" target="_blank" rel="noopener">WhatsApp</a></p>
+    </section>
+  </main>
+
+  <div class="floating-wa">
+    <a href="https://wa.me/34600000000" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">WhatsApp</a>
+  </div>
+
+  <footer class="container">
+    <p><strong>© 2025 Tu Marca</strong> • Instagram · TikTok · X · LinkedIn</p>
+  </footer>
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tu Marca · Accesorios de Boda",
+    "url": "https://tuusuario.github.io",
+    "image": "https://tuusuario.github.io/images/preview.svg",
+    "description": "Accesorios y papelería de boda personalizados.",
+    "areaServed": "Spain",
+    "sameAs": [],
+    "telephone": "+34 600 00 00 00",
+    "address": {{
+      "@type": "PostalAddress",
+      "addressCountry": "ES"
+    }}
+  }}
+  </script>
+</body>
+</html>

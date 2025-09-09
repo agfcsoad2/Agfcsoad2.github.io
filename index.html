@@ -28,6 +28,9 @@
     .floating-wa a { display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1rem; border-radius: 999px; background:#25D366; color:#fff; text-decoration:none; box-shadow: 0 6px 20px rgba(37,211,102,.3); }
     details { border:1px solid #eee; border-radius:.6rem; padding:.75rem 1rem; background:#fff; }
     details + details { margin-top:.75rem; }
+    /* Make iframe clearly visible and interactive */
+    .tally-embed { width:100%; height:900px; border:1px solid #eee; border-radius:.6rem; }
+    @media (min-width: 768px) { .tally-embed { height:800px; } }
   </style>
 </head>
 <body>
@@ -144,12 +147,14 @@
     <section id="contacto">
       <h2>Contactar</h2>
       <p>Rellena el formulario y te respondemos en 24–48 h. También puedes escribir por WhatsApp.</p>
-      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:.6rem;border:1px solid #eee;">
-        <iframe data-tally-src="https://tally.so/embed/n04EDN?hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="Contacto" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-      </div>
+      <!-- Direct Tally iframe (no wrapper) -->
+      <iframe class="tally-embed"
+              src="https://tally.so/embed/n04EDN?hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy" frameborder="0" marginheight="0" marginwidth="0" title="Contacto Wedding Kenis"></iframe>
       <script>
-        var d=document,w="https://tally.so/widgets/embed.js",v=function(){if("Tally"in window){Tally.loadEmbeds()}else{d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})}};
-        if(!("Tally"in window))d.querySelectorAll("script[src='"+w+"']").length||((s=d.createElement("script")).src=w,s.onload=v,d.body.appendChild(s)); else v();
+        // optional: ensure dynamicHeight works
+        var d=document,w="https://tally.so/widgets/embed.js";
+        if(!("Tally" in window)){ var s=d.createElement("script"); s.src=w; d.body.appendChild(s); }
       </script>
       <p style="margin-top:.75rem"><a href="https://tally.so/r/n04EDN" target="_blank" rel="noopener">Abrir formulario en una pestaña nueva</a></p>
       <p><a class="whatsapp-btn" href="https://wa.me/34640161111?text=Hola%20Wedding%20Kenis%2C%20quiero%20presupuesto%20para%20mi%20boda%20el%20%5Bfecha%5D." role="button" target="_blank" rel="noopener">WhatsApp +34 640161111</a></p>
@@ -163,19 +168,5 @@
   <footer class="container">
     <p><strong>© 2025 Wedding Kenis</strong> • Instagram · TikTok · X · LinkedIn</p>
   </footer>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Wedding Kenis",
-    "url": "https://agfcsoad2.github.io",
-    "image": "https://agfcsoad2.github.io/images/preview.svg",
-    "description": "Wedding Kenis: accesorios y papelería de boda personalizados.",
-    "areaServed": "Spain",
-    "sameAs": [],
-    "telephone": "+34 640161111"
-  }
-  </script>
 </body>
 </html>
